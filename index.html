@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manish Raj | Academic Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body { margin:0; font-family:'Poppins',sans-serif; background:#0f172a; color:#e2e8f0; }
+    header { text-align:center; padding:70px 20px; background:linear-gradient(135deg,#1e3a8a,#020617); }
+    header h1 { font-size:2.8rem; margin:0; }
+    header p { opacity:0.85; }
+    nav { display:flex; justify-content:center; gap:25px; background:#020617; padding:15px; position:sticky; top:0; }
+    nav a { color:#e2e8f0; text-decoration:none; }
+    nav a:hover { color:#38bdf8; }
+    section { max-width:1100px; margin:40px auto; padding:20px; }
+    h2 { border-left:4px solid #38bdf8; padding-left:10px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:20px; }
+    .card { background:#020617; border-radius:15px; overflow:hidden; transition:0.3s; }
+    .card:hover { transform:translateY(-6px); }
+    .card img { width:100%; height:200px; object-fit:cover; }
+    .card-content { padding:15px; }
+    iframe { width:100%; height:200px; border:none; }
+    ul { line-height:1.8; }
+    footer { text-align:center; padding:20px; background:#020617; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Manish Raj</h1>
+  <p>PhD Researcher | CSP | Heliostat Field Optimization | Solar Tracking Systems</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#research">Research</a>
+  <a href="#publications">Publications</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a PhD researcher in Mechanical Engineering at IIT Kanpur working in Concentrated Solar Power (CSP). My work focuses on heliostat field optimization, solar tracking, and terrain-aware solar plant design.
+  </p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://source.unsplash.com/featured/?solar,heliostat">
+      <div class="card-content">
+        <h3>IoT-based Heliostat Field (DRDO)</h3>
+        <p>20 kWth heliostat field with camera-based feedback and real-time correction.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/featured/?engineering,mechanism">
+      <div class="card-content">
+        <h3>Sensorless Tracking System</h3>
+        <p>Encoder-based tilt-roll tracking system for robust solar tracking.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/9yR6fY0b6xQ"></iframe>
+      <div class="card-content">
+        <h3>Heliostat Demo</h3>
+        <p>Real-time solar tracking and beam correction demonstration.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="research">
+  <h2>Research Focus</h2>
+  <ul>
+    <li>Heliostat field layout optimization</li>
+    <li>Shading/blocking loss modeling</li>
+    <li>Terrain-aware solar plant design</li>
+    <li>Solar tracking control systems</li>
+  </ul>
+</section>
+
+<section id="publications">
+  <h2>Publications</h2>
+  <ul>
+    <li>Algorithm for PV panels on uneven terrain – Solar Energy (2026)</li>
+    <li>HeFAAL heliostat optimization tool – Solar Energy (2025)</li>
+    <li>Spillage estimation in solar towers – Solar Energy (2023)</li>
+    <li>Flux enhancement in CRT systems – Solar Energy (2023)</li>
+    <li>Shading/blocking estimation method – Solar Energy (2022)</li>
+    <li>Solar tower on uneven terrain – Renewable Energy (2020)</li>
+  </ul>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <ul>
+    <li>Solar Software: SolarPILOT, SolTrace</li>
+    <li>Programming: Python, C</li>
+    <li>Embedded Systems: Arduino, ESP32</li>
+    <li>Machine Learning: TensorFlow, Scikit-learn</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: mraj@iitk.ac.in</p>
+  <p>Phone: +91-7086206806</p>
+  <p>Google Scholar: <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">View Profile</a></p>
+</section>
+
+<footer>
+  <p>© 2026 Manish Raj</p>
+</footer>
+
+</body>
+</html>
