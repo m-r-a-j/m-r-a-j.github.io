@@ -1,344 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Manish Raj | Academic Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Manish Raj</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-<style>
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #0f172a;
-  color: #e2e8f0;
-}
+  <style>
+    body { margin:0; font-family:'Poppins',sans-serif; background:#0f172a; color:#e2e8f0; }
 
-header {
-  text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(135deg,#1e3a8a,#020617);
-}
+    nav { display:flex; justify-content:center; gap:25px; background:#020617; padding:15px; }
+    nav a { color:#e2e8f0; text-decoration:none; }
 
-/* NAV */
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  background: #020617;
-  padding: 15px;
-  position: sticky;
-  top: 0;
-}
+    section { max-width:1000px; margin:50px auto; padding:20px; }
 
-nav a {
-  color: #e2e8f0;
-  text-decoration: none;
-}
+    h2 { border-left:4px solid #38bdf8; padding-left:10px; }
 
-.nav-item {
-  position: relative;
-  display: inline-block;
-}
+    .box {
+      background:#020617;
+      padding:20px;
+      border-radius:10px;
+      margin-top:20px;
+    }
 
-/* FIX: remove gap */
-.dropdown {
-  display: none;
-  position: absolute;
-  background: #020617;
-  padding: 12px 18px;
-  border-radius: 8px;
-  min-width: 180px;
-  white-space: nowrap;
-
-  top: 100%;   /* 🔥 important fix */
-  left: 0;
-}
-
-/* SHOW DROPDOWN */
-.nav-item:hover .dropdown {
-  display: block;
-}
-
-/* 🔥 IMPORTANT: keep hover active */
-.nav-item {
-  padding-bottom: 8px;  /* creates buffer zone */
-}.dropdown a {
-  display: block;
-  padding: 6px 0;
-}
-
-.dropdown a:hover { color: #38bdf8; }
-
-.nav-item:hover .dropdown { display: block; }
-
-/* SMALL DOT SYMBOL */
-.dot {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  background: #e2e8f0;
-  border-radius: 50%;
-  margin-left: 6px;
-  vertical-align: middle;
-}
-
-section {
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 20px;
-}
-
-h2 {
-  border-left: 4px solid #38bdf8;
-  padding-left: 10px;
-}
-
-/* ABOUT FIXED ALIGNMENT */
-.about-flex {
-  display: flex;
-  gap: 25px;
-  align-items: center;
-}
-
-.about-flex img {
-  width: 180px;
-  border-radius: 50%;
-  border: 3px solid #38bdf8;
-}
-
-.about-flex p {
-  margin: 0;
-}
-
-/* TIMELINE */
-.timeline {
-  border-left: 3px solid #38bdf8;
-  padding-left: 25px;
-}
-
-.timeline-item {
-  margin-bottom: 30px;
-  position: relative;
-}
-
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  left: -10px;
-  top: 5px;
-  width: 16px;
-  height: 16px;
-  background: #38bdf8;
-  border-radius: 50%;
-}
-
-.timeline-card {
-  background: #020617;
-  padding: 15px;
-  border-radius: 10px;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.media {
-  width: 250px;
-}
-
-.media video, .media img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.content { flex: 1; }
-
-.year {
-  font-size: 0.85rem;
-  opacity: 0.7;
-}
-
-.tag {
-  display: inline-block;
-  background: #38bdf8;
-  color: #020617;
-  padding: 3px 8px;
-  margin: 5px 5px 0 0;
-  border-radius: 5px;
-  font-size: 0.75rem;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #020617;
-}
-
-</style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Manish Raj</h1>
-  <p>PhD Researcher | CSP | Heliostat Systems</p>
-</header>
-
 <nav>
-<a href="#about">About</a>
-
-<div class="nav-item">
-  <a href="#projects">Projects <span class="dot"></span></a>
-  <div class="dropdown">
-    <a href="projects.html#live">Live Projects</a>
-    <a href="projects.html#phd">PhD</a>
-    <a href="projects.html#mtech">M.Tech</a>
-  </div>
-</div>
-
-<a href="#research">Research</a>
-<a href="#publications">Publications</a>
-<a href="#contact">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="#live">Active Projects</a>
+  <a href="#phd">PhD</a>
+  <a href="#mtech">M.Tech</a>
 </nav>
 
-<section id="about">
-<h2>About Me</h2>
-
-<div class="about-flex">
-  <img src="my_image.jpg">
-  <p>
-    I am a PhD researcher at IIT Kanpur working on Concentrated Solar Power, heliostat tracking,
-    and terrain-aware solar plant design. My work integrates control systems, embedded hardware,
-    and optimization models to improve solar energy efficiency.
-  </p>
-</div>
-
+<section id="live">
+  <h2>Active Projects</h2>
+  <div class="box">
+    <p>
+      Currently working on the development of an IoT-enabled heliostat field for space heating applications. The system integrates dual-axis tracking, camera-based feedback, and real-time control to improve optical efficiency and reliability.
+    </p>
+  </div>
 </section>
 
-<section id="projects">
-<h2>Projects</h2>
-
-<div class="timeline">
-
-<div class="timeline-item">
-<a href="projects.html#live" style="text-decoration:none;color:inherit;">
-<div class="timeline-card">
-<div class="media">
-<video controls>
-<source src="heliostat_2.mp4" type="video/mp4">
-</video>
-</div>
-<div class="content">
-<div class="year">2025 – Present</div>
-<h3>Live Projects</h3>
-<p>IoT-based heliostat field with camera feedback and real-time correction.</p>
-<div>
-<span class="tag">CSP</span>
-<span class="tag">Tracking</span>
-<span class="tag">IoT</span>
-</div>
-</div>
-</div>
-</a>
-</div>
-
-<div class="timeline-item">
-<a href="projects.html#phd" style="text-decoration:none;color:inherit;">
-<div class="timeline-card">
-<div class="media">
-<img src="https://source.unsplash.com/featured/?solar">
-</div>
-<div class="content">
-<div class="year">2020 – 2025</div>
-<h3>PhD Work</h3>
-<p>Heliostat optimization, shading analysis, and terrain-aware solar design.</p>
-<div>
-<span class="tag">Optimization</span>
-<span class="tag">Heliostat</span>
-</div>
-</div>
-</div>
-</a>
-</div>
-
-<div class="timeline-item">
-<a href="projects.html#mtech" style="text-decoration:none;color:inherit;">
-<div class="timeline-card">
-<div class="media">
-<img src="https://source.unsplash.com/featured/?engineering">
-</div>
-<div class="content">
-<div class="year">2018 – 2020</div>
-<h3>M.Tech Work</h3>
-<p>PV layout optimization on uneven terrain.</p>
-<div>
-<span class="tag">PV</span>
-<span class="tag">Simulation</span>
-</div>
-</div>
-</div>
-</a>
-</div>
-
-</div>
-
+<section id="phd">
+  <h2>PhD Work</h2>
+  <div class="box">
+    <p>
+      The PhD research focuses on developing computationally efficient methods for heliostat field optimization and performance estimation. It addresses challenges related to uneven terrain, shading losses, and field layout design for large-scale solar tower systems.
+    </p>
+  </div>
 </section>
 
-<section id="research">
-  <h2>Research Focus</h2>
-  <ul>
-    <li>Heliostat field layout optimization</li>
-    <li>Shading/blocking loss modeling</li>
-    <li>Terrain-aware solar plant design</li>
-    <li>Solar tracking control systems</li>
-  </ul>
+<section id="mtech">
+  <h2>M.Tech Work</h2>
+  <div class="box">
+    <p>
+      Developed an optimization tool for photovoltaic panel layout on uneven terrain, enabling efficient utilization of hilly and irregular land while maximizing annual energy yield.
+    </p>
+  </div>
 </section>
-
-<section id="publications">
-  <h2>Publications</h2>
-  <ul>
-    <li><b>Manish Raj</b>, Aditya Yadav, Jishnu Bhattacharya. <i>An algorithm for laying photovoltaic panels on an undulated hilly terrain</i>, Solar Energy, Volume 303, 2026, Page 114087. 
-    <a href="https://doi.org/10.1016/j.solener.2025.114087" target="_blank">[DOI]</a></li>
-
-    <li><b>Manish Raj</b>, Jishnu Bhattacharya. <i>HeFAAL: A tool to design, analyze and optimize a solar heliostat field layout on a flat as well as uneven terrain</i>, Solar Energy, Volume 301, 2025, Page 113915. 
-    <a href="https://doi.org/10.1016/j.solener.2025.113915" target="_blank">[DOI]</a></li>
-
-    <li><b>Manish Raj</b>, Jishnu Bhattacharya. <i>Precise and fast spillage estimation for a central receiver tower based solar plant</i>, Solar Energy, Volume 265, 2023, Page 112103. 
-    <a href="https://doi.org/10.1016/j.solener.2023.112103" target="_blank">[DOI]</a></li>
-
-    <li>Manoj Kumar Sharma, <b>Manish Raj</b>, Jishnu Bhattacharya. <i>Flux augmentation and temperature enhancement through secondary parabolic concentrator and air recirculation for a central receiver tower system</i>, Solar Energy, Volume 263, 2023, Page 111916. 
-    <a href="https://doi.org/10.1016/j.solener.2023.111916" target="_blank">[DOI]</a></li>
-
-    <li><b>Manish Raj</b>, Jishnu Bhattacharya. <i>An accurate and cheaper method of estimating shading and blocking losses in a heliostat field</i>, Solar Energy, Volume 243, 2022, Pages 469–482. 
-    <a href="https://doi.org/10.1016/j.solener.2022.08.020" target="_blank">[DOI]</a></li>
-
-    <li>Naman Agarwal, <b>Manish Raj</b>, Jishnu Bhattacharya. <i>Solar tower on an uneven terrain: methodology and case study</i>, Renewable Energy, 2020. 
-    <a href="https://doi.org/10.1016/j.renene.2020.07.113" target="_blank">[DOI]</a></li>
-
-    <li><b>Manish Raj</b>, Naman Agarwal, Jishnu Bhattacharya. <i>Estimating potentiality for central receiver tower technology for CSP on uneven terrain: Case study of Leh</i>, Indian Power Stations Conference, 2020.</li>
-  </ul>
-</section>
-
-<section id="skills">
-  <h2>Technical Skills</h2>
-  <ul>
-    <li>Solar Software: SolarPILOT, SolTrace</li>
-    <li>Programming: Python, C</li>
-    <li>Embedded Systems: Arduino, ESP32</li>
-    <li>Machine Learning: TensorFlow, Scikit-learn</li>
-  </ul>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: mraj@iitk.ac.in</p>
-  <p>Phone: +91-7086206806</p>
-  <p>Google Scholar: <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">View Profile</a></p>
-</section>
-<footer>
-© 2026 Manish Raj
-</footer>
 
 </body>
 </html>
