@@ -160,18 +160,18 @@ ul {
 <p><b>Method:</b></p>
 <ul>
 <li>Dual-axis tracking system</li>
-<li>Encoder-based feedback (AS5600)</li>
+<li>Encoder-based feedback</li>
 <li>Camera-based spot detection</li>
 <li>Closed-loop correction algorithm</li>
 </ul>
 
 <p><b>Key Contributions:</b></p>
 <ul>
-<li>Real-time feedback correction using image processing</li>
-<li>Improved robustness without light sensors</li>
+<li>Developing IoT-enabled SoC-based heliostat</li>
+<li>Developing sensor-less tilt-roll type solar tracker</li>
 </ul>
 
-<p><b>Tools:</b> ESP32, Python, SolarPILOT, SolTrace</p>
+<p><b>Tools:</b> ESP32, HeFAAL, Python, SolarPilot, SolTrace</p>
 </div>
 
 </div>
@@ -203,27 +203,29 @@ ul {
 </div>
 
 <div class="content">
-<h3>Terrain-Aware Heliostat Field Optimization</h3>
+<h3>Finding Terrain-Specific Layout of a Heliostat Field</h3>
 
 <p><b>Summary:</b> Efficient computational methods for heliostat field design on uneven terrain.</p>
 
 <p><b>Objective:</b></p>
 <ul>
-<li>Reduce shading and blocking losses</li>
-<li>Optimize layout for complex terrain</li>
+<li>Accurate estimation of optical efficiency of a heliostat field at cheaper computational cost</li>
+<li>Optimize layout for complex terrain using heuristic techniques</li>
 </ul>
 
 <p><b>Method:</b></p>
 <ul>
-<li>Filtering-based shading estimation</li>
-<li>Parallel plane assumption</li>
-<li>Layout optimization algorithms</li>
+<li>Two-level identification of potenial shaders and blockers</li>
+<li>Edge-to-center approach for estimating shading and blocking</li>
+<li>Using combined scheme of pseudo ray tracing and elliptical gaussian to estimate spillage</li>
+<li>Applying GA and PSO to optimize heliostat field using advanced objective function</li>
 </ul>
 
 <p><b>Key Contributions:</b></p>
 <ul>
 <li>Reduced computational cost</li>
 <li>Accurate terrain-aware modeling</li>
+<li>Optimizing using advanced objective function</li>
 </ul>
 
 <p><b>Tools:</b> Python, Numerical modeling</p>
@@ -252,7 +254,7 @@ ul {
 </div>
 
 <div class="content">
-<h3>PV Layout Optimization on Uneven Terrain</h3>
+<h3>An algorithm for laying photovoltaic panels on an undulated hilly terrain</h3>
 
 <p><b>Summary:</b> Optimization algorithm for photovoltaic layout on hilly terrain.</p>
 
@@ -274,7 +276,7 @@ ul {
 <li>Enhanced energy output</li>
 </ul>
 
-<p><b>Tools:</b> MATLAB, Python</p>
+<p><b>Tools:</b> Python, Machine Learning</p>
 </ul>
 
 </div>
